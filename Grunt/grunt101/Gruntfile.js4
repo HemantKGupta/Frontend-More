@@ -1,0 +1,51 @@
+var grunt = require('grunt');
+
+ module.exports = function(grunt){
+  grunt.config.init({
+    currency: {
+      USD: ['EUR', 'GBP', 'DOP'],
+      DOP: ['USD']
+    },
+
+    endpoint: {
+      host: 'http://www.freecurrencyconverter3api.com',
+      path: '/api/v2/convert?compact=y&q='
+    }
+  });
+
+  grunt.registerMultiTask('currency', 'Fetches currency exchange rates', function() {
+    var http = require('http'),
+      done = this.async(),
+      responses = 0;
+
+    var baseCurrency = this.target;
+    var targetCurrencies = this.data;
+
+    grunt.config.requires('endpoint');
+
+    targetCurrencies.forEach(function(targetCurrency, i, arr){
+      var convertTo = baseCurrency + '_' + targetCurrency,
+        body = [];
+        url = grunt.config.get('endpoint.host');
+
+      url += grunt.config.get('endpoint.path') + convertTo;
+
+      http.get(url, function(res) {
+        res.on('data', function(data){
+          body.push(data);
+        });
+
+        res.on('end', function () {
+          var conversion = JSON.parse(body.join());
+          grunt.log.ok(baseCurrency + '/' + targetCurrency + ' => ' + conversion[convertTo].val);
+          // if got all responses: done!
+          if(responses++ == arr.length - 1)
+            done();
+        });
+      }).on('error', function (err) {
+        grunt.warn('Please verify endpoint host and path: <'+ url +'>. It might be incorrect or down.');
+        done(err);
+      });
+    });
+  });
+}

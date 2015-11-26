@@ -1,0 +1,195 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'grunt-contrib-watch',
+1 verbose cli   'grunt-contrib-connect',
+1 verbose cli   'connect-livereload' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json test-project@1.0.0 No repository field.
+5 warn package.json test-project@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'grunt-contrib-watch@^0.6.1', null ]
+8 verbose cache add name=undefined spec="grunt-contrib-watch@^0.6.1" args=["grunt-contrib-watch@^0.6.1",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'grunt-contrib-watch@^0.6.1',
+9 verbose parsed url   path: 'grunt-contrib-watch@^0.6.1',
+9 verbose parsed url   href: 'grunt-contrib-watch@^0.6.1' }
+10 verbose cache add [ 'grunt-contrib-connect', null ]
+11 verbose cache add name=undefined spec="grunt-contrib-connect" args=["grunt-contrib-connect",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'grunt-contrib-connect',
+12 verbose parsed url   path: 'grunt-contrib-connect',
+12 verbose parsed url   href: 'grunt-contrib-connect' }
+13 verbose cache add [ 'connect-livereload', null ]
+14 verbose cache add name=undefined spec="connect-livereload" args=["connect-livereload",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'connect-livereload',
+15 verbose parsed url   path: 'connect-livereload',
+15 verbose parsed url   href: 'connect-livereload' }
+16 verbose cache add name="grunt-contrib-watch" spec="^0.6.1" args=["grunt-contrib-watch","^0.6.1"]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: '^0.6.1',
+17 verbose parsed url   path: '^0.6.1',
+17 verbose parsed url   href: '^0.6.1' }
+18 verbose addNamed [ 'grunt-contrib-watch', '^0.6.1' ]
+19 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+20 silly lockFile 224b1ece-grunt-contrib-watch-0-6-1 grunt-contrib-watch@^0.6.1
+21 verbose lock grunt-contrib-watch@^0.6.1 /Users/hemant/.npm/224b1ece-grunt-contrib-watch-0-6-1.lock
+22 silly lockFile a0cb9c83-grunt-contrib-connect grunt-contrib-connect
+23 verbose lock grunt-contrib-connect /Users/hemant/.npm/a0cb9c83-grunt-contrib-connect.lock
+24 silly lockFile ba1ecd0b-connect-livereload connect-livereload
+25 verbose lock connect-livereload /Users/hemant/.npm/ba1ecd0b-connect-livereload.lock
+26 silly lockFile a0cb9c83-grunt-contrib-connect grunt-contrib-connect
+27 silly lockFile a0cb9c83-grunt-contrib-connect grunt-contrib-connect
+28 verbose addNamed [ 'grunt-contrib-connect', '' ]
+29 verbose addNamed [ null, '*' ]
+30 silly lockFile 8d414d07-grunt-contrib-connect grunt-contrib-connect@
+31 verbose lock grunt-contrib-connect@ /Users/hemant/.npm/8d414d07-grunt-contrib-connect.lock
+32 silly addNameRange { name: 'grunt-contrib-watch',
+32 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+32 silly addNameRange   hasData: false }
+33 silly lockFile ba1ecd0b-connect-livereload connect-livereload
+34 silly lockFile ba1ecd0b-connect-livereload connect-livereload
+35 silly addNameRange { name: 'grunt-contrib-connect', range: '*', hasData: false }
+36 verbose addNamed [ 'connect-livereload', '' ]
+37 verbose addNamed [ null, '*' ]
+38 silly lockFile 43fc8671-connect-livereload connect-livereload@
+39 verbose lock connect-livereload@ /Users/hemant/.npm/43fc8671-connect-livereload.lock
+40 verbose request where is /grunt-contrib-connect
+41 verbose request registry https://registry.npmjs.org/
+42 verbose request id 85668c9241248dfa
+43 verbose url raw /grunt-contrib-connect
+44 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-connect' ]
+45 verbose url resolved https://registry.npmjs.org/grunt-contrib-connect
+46 verbose request where is https://registry.npmjs.org/grunt-contrib-connect
+47 info trying registry request attempt 1 at 19:48:24
+48 http GET https://registry.npmjs.org/grunt-contrib-connect
+49 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+50 silly addNameRange { name: 'connect-livereload', range: '*', hasData: false }
+51 verbose request where is /connect-livereload
+52 verbose request registry https://registry.npmjs.org/
+53 verbose url raw /connect-livereload
+54 verbose url resolving [ 'https://registry.npmjs.org/', './connect-livereload' ]
+55 verbose url resolved https://registry.npmjs.org/connect-livereload
+56 verbose request where is https://registry.npmjs.org/connect-livereload
+57 info trying registry request attempt 1 at 19:48:24
+58 http GET https://registry.npmjs.org/connect-livereload
+59 verbose request where is /grunt-contrib-watch
+60 verbose request registry https://registry.npmjs.org/
+61 verbose url raw /grunt-contrib-watch
+62 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-watch' ]
+63 verbose url resolved https://registry.npmjs.org/grunt-contrib-watch
+64 verbose request where is https://registry.npmjs.org/grunt-contrib-watch
+65 info trying registry request attempt 1 at 19:48:24
+66 verbose etag "1TEXRJ8WTROUJXBBJFWH2M79B"
+67 http GET https://registry.npmjs.org/grunt-contrib-watch
+68 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+69 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+70 info trying registry request attempt 2 at 19:48:34
+71 http GET https://registry.npmjs.org/grunt-contrib-connect
+72 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+73 info trying registry request attempt 2 at 19:48:34
+74 http GET https://registry.npmjs.org/connect-livereload
+75 info trying registry request attempt 2 at 19:48:34
+76 verbose etag "1TEXRJ8WTROUJXBBJFWH2M79B"
+77 http GET https://registry.npmjs.org/grunt-contrib-watch
+78 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+79 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+80 info trying registry request attempt 3 at 19:49:34
+81 http GET https://registry.npmjs.org/grunt-contrib-connect
+82 info trying registry request attempt 3 at 19:49:34
+83 http GET https://registry.npmjs.org/connect-livereload
+84 info trying registry request attempt 3 at 19:49:34
+85 verbose etag "1TEXRJ8WTROUJXBBJFWH2M79B"
+86 http GET https://registry.npmjs.org/grunt-contrib-watch
+87 silly lockFile 43fc8671-connect-livereload connect-livereload@
+88 silly lockFile 43fc8671-connect-livereload connect-livereload@
+89 silly lockFile 8d414d07-grunt-contrib-connect grunt-contrib-connect@
+90 silly lockFile 8d414d07-grunt-contrib-connect grunt-contrib-connect@
+91 silly registry.get cb [ 304, undefined ]
+92 verbose etag https://registry.npmjs.org/grunt-contrib-watch from cache
+93 silly addNameRange number 2 { name: 'grunt-contrib-watch',
+93 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+93 silly addNameRange   hasData: true }
+94 silly addNameRange versions [ 'grunt-contrib-watch',
+94 silly addNameRange   [ '0.1.0',
+94 silly addNameRange     '0.1.1',
+94 silly addNameRange     '0.1.2',
+94 silly addNameRange     '0.1.3',
+94 silly addNameRange     '0.1.4',
+94 silly addNameRange     '0.2.0',
+94 silly addNameRange     '0.3.0',
+94 silly addNameRange     '0.3.1',
+94 silly addNameRange     '0.4.0',
+94 silly addNameRange     '0.4.1',
+94 silly addNameRange     '0.4.2',
+94 silly addNameRange     '0.4.3',
+94 silly addNameRange     '0.4.4',
+94 silly addNameRange     '0.5.0',
+94 silly addNameRange     '0.5.1',
+94 silly addNameRange     '0.5.2',
+94 silly addNameRange     '0.5.3',
+94 silly addNameRange     '0.6.0',
+94 silly addNameRange     '0.6.1',
+94 silly addNameRange     '0.2.0-a',
+94 silly addNameRange     '0.2.0-rc5',
+94 silly addNameRange     '0.2.0-rc7' ] ]
+95 verbose addNamed [ 'grunt-contrib-watch', '0.6.1' ]
+96 verbose addNamed [ '0.6.1', '0.6.1' ]
+97 silly lockFile 08049756-grunt-contrib-watch-0-6-1 grunt-contrib-watch@0.6.1
+98 verbose lock grunt-contrib-watch@0.6.1 /Users/hemant/.npm/08049756-grunt-contrib-watch-0-6-1.lock
+99 silly lockFile 08049756-grunt-contrib-watch-0-6-1 grunt-contrib-watch@0.6.1
+100 silly lockFile 08049756-grunt-contrib-watch-0-6-1 grunt-contrib-watch@0.6.1
+101 silly lockFile 224b1ece-grunt-contrib-watch-0-6-1 grunt-contrib-watch@^0.6.1
+102 silly lockFile 224b1ece-grunt-contrib-watch-0-6-1 grunt-contrib-watch@^0.6.1
+103 error network getaddrinfo ENOTFOUND
+103 error network This is most likely not a problem with npm itself
+103 error network and is related to network connectivity.
+103 error network In most cases you are behind a proxy or have bad network settings.
+103 error network
+103 error network If you are behind a proxy, please make sure that the
+103 error network 'proxy' config is set properly.  See: 'npm help config'
+104 error System Darwin 14.1.0
+105 error command "node" "/usr/local/bin/npm" "install" "--save-dev" "grunt-contrib-watch" "grunt-contrib-connect" "connect-livereload"
+106 error cwd /Users/hemant/Dropbox/Study/Web/Grunt/TestProject
+107 error node -v v0.10.33
+108 error npm -v 1.4.28
+109 error syscall getaddrinfo
+110 error code ENOTFOUND
+111 error errno ENOTFOUND
+112 verbose exit [ 1, true ]
